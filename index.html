@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nomprint — Remember every nom.</title>
+  <meta name="description" content="Nomprint is a simple way to remember where you ate something great — snap a photo, jot a note, rate it, and find it again later." />
+  <link rel="icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #FFF1E8;
+      --orange: #FF6B35;
+      --dark: #4A1B0C;
+      --rust: #993C1D;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 64px 24px 32px;
+      max-width: 480px;
+    }
+    .logo {
+      width: 140px;
+      height: auto;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      margin: 20px 0 6px;
+      letter-spacing: 0.5px;
+    }
+    .tagline {
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--rust);
+      margin: 0 0 28px;
+    }
+    p.description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #5b4033;
+      margin: 0 0 36px;
+    }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      transition: opacity 0.15s ease;
+    }
+    .store-badge:hover { opacity: 0.9; }
+    .store-note {
+      font-size: 13px;
+      color: #a68a7a;
+      margin-top: 10px;
+    }
+    footer {
+      padding: 24px;
+      font-size: 13px;
+      color: #a68a7a;
+    }
+    footer a {
+      color: var(--rust);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.png" alt="Nomprint logo" />
+    <h1>Nomprint</h1>
+    <p class="tagline">Remember every nom.</p>
+    <p class="description">
+      Nomprint is a simple way to remember where you ate something great — snap a photo,
+      jot a note, rate it, and find it again later. Search by keyword, rating, or the map,
+      whenever "where did we have that great fried chicken" comes up.
+    </p>
+    <a class="store-badge" href="#" aria-disabled="true">Coming soon to Google Play</a>
+    <p class="store-note">Link will go live once Nomprint is published.</p>
+  </main>
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>
