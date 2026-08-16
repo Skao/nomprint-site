@@ -59,6 +59,12 @@
       color: #5b4033;
       margin: 0 0 36px;
     }
+    .store-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
     .store-badge {
       display: inline-flex;
       align-items: center;
@@ -101,8 +107,11 @@
       jot a note, rate it, and find it again later. Search by keyword, rating, or the map,
       whenever "where did we have that great fried chicken" comes up.
     </p>
-    <a class="store-badge" href="#" aria-disabled="true">Coming soon to Google Play</a>
-    <p class="store-note">Link will go live once Nomprint is published.</p>
+    <div class="store-badges">
+      <a class="store-badge" href="#" aria-disabled="true">Coming soon to Google Play</a>
+      <a class="store-badge" href="#" aria-disabled="true">Coming soon to the App Store</a>
+    </div>
+    <p class="store-note">Links will go live once Nomprint is published.</p>
   </main>
   <footer>
     <a href="privacy.html">Privacy Policy</a>
